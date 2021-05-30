@@ -1,0 +1,60 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+   <!-- Heading -->
+   <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ProyectoWEBApp/img/800xp.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper"> </span>
+            <span class="section-heading-lower">ALS</span>
+          </h2>
+          <p class="mb-3">Avionics and Lear Services S.A. de C.V. es una empresa enfocada a proporcionar servicios de suministro, de ingeniería y mantenimiento en aeronáutica; y como grupo empresarial cuenta con 20 años de experiencia en el sector aeronáutico con el permiso de Taller 470, emitido por la Dirección General de Aeronáutica Civil.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="page-section clearfix">
+    <div class="container">
+      <div class="intro">
+        <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{% static 'ProyectoWEBApp/img/ingenieria.jpg' %}" alt="">
+        <div class="intro-text left-0 text-center bg-faded p-5 rounded">
+          <h2 class="section-heading mb-4" >
+            <span class="section-heading-upper"> </span>
+            <span class="section-heading-lower">Mision</span>
+          </h2>
+          <p class="mb-3">Ofrecer soluciones en reparación y mantenimiento de aeronaves implementando estándares internacionales de calidad y servicio.
+          </p>
+         
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- Message -->
+    <section class="page-section cta">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 mx-auto">
+            <div class="cta-inner text-center rounded">
+              <h2 class="section-heading mb-4">
+                <span class="section-heading-lower">Vision</span>
+              </h2>
+              <p class="mb-0">Convertirnos en el principal respaldo de empresas aeronáuticas en mantenimiento y reparación de aeronaves.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+  {% endblock %}

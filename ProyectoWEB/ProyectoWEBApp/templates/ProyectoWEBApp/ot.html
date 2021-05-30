@@ -1,0 +1,37 @@
+{% extends "ProyectoWebApp/base.html" %}
+
+{% load static %}
+
+{% block content %}
+
+<div class="table-responsive">
+<table  class="table table-striped table-dark table-hover">
+
+  <tr>
+
+    <th scope="col">Matricula</th>
+
+    <th scope="col">Cliente</th>
+
+    <th scope="col">Reporte</th>
+
+    <th scope="col">Modelo</th>
+
+    <th scope="col">OT</th>
+
+  </tr>
+  {% for ot in ordenes %}
+  <tr>
+
+    <td scope="row">{{ot.matricula}}</td>
+    <td>{{ot.cliente}}</td>
+    <td>{{ot.reporte}}</td>
+    <td>{{ot.modelo}}</td>
+    <td>{{ot.tecnico}}</td> 
+  </tr>
+  {% endfor %}
+
+</table>
+</div>
+
+{% endblock %}
